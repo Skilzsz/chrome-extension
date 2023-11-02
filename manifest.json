@@ -13,6 +13,7 @@
         "default_icon": "img/will-icon.png",
         "default_popup": "popup.html"
     },
+    "permissions": ["storage"],
     "web_accessible_resources": [
         "audio/click.wav",
         "audio/space.wav",
