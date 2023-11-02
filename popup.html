@@ -1,13 +1,35 @@
-<!-- <title>Extension Popup</title> -->
-<div id="container">
-    <div id="switch">
-        <input type="radio">On</input>
-        <input type="radio">Off</input>
-    </div>
-    <div id="happy">
-        <img src="" alt="">
-    </div>
-    <div id="sad">
-        <img src="" alt="">
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+    <div id="container" style="height: 250px; width: 250px">
+        <div id="switch" style="text-align: center;">
+            <form>
+                <input id="button-on" type="radio" name="on-off">On</input>
+                <input id="button-off" type="radio" name="on-off">Off</input>
+            </form>
+        </div>
+        <div id="happy">
+            <img src="img/will-icon.png" alt="">
+        </div>
+        <div id="angry">
+            <img src="img/angry-will.png" alt="">
+        </div>
+    </div> 
+    <script src="popup.js">
+        // // logic for radio buttons in popup
+        // const onButton = document.getElementById("#button-on")
+        // console.log(onButton)
+        // const offButton = document.getElementById("#button-off")
+        // const happyWill = document.getElementById("#happy")
+        // const angryWill = document.getElementById("#angry")
+        // if (onButton.checked) {
+        //     happyWill.style = "display: block"
+        //     angryWill.style = "display: none"
+        // } else if (offButton.checked) {
+        //     happyWill.style = "display: none"
+        //     angryWill.style = "display: block"
+        // } else {
+        //     happyWill.style = "display: block"
+        //     angryWill.style = "display: none"
+        // }
+    </script> 
+</html>

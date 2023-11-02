@@ -6,11 +6,11 @@
     "content_scripts": [
         {
             "matches": ["https://*/*"],
-            "js": ["./main-v2.js"]
+            "js": ["./main-v2.js", "./popup.js"]
         }
     ],
     "browser_action": {
-        "default_icon": "will_icon.png",
+        "default_icon": "img/will-icon.png",
         "default_popup": "popup.html"
     },
     "web_accessible_resources": [
