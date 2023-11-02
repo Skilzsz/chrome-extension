@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "SoundBoard",
+    "version": "1.0",
+    "description": "Replaces user commands with clips from Will Sentance",
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["./main.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "will_icon.jpg"
+    }
+}
