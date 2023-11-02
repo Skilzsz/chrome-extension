@@ -44,7 +44,7 @@ chrome.storage.local.get(["switchState"], (result) => {
         })
 
         document.addEventListener('keydown', (e) => {
-            if (e.code === 'Backspace') { 
+            if (e.code === 'Escape') { 
                 let audio = new Audio (chrome.runtime.getURL("audio/no-god.wav"))
                 audio.play()
             }
