@@ -10,7 +10,7 @@
         }
     ],
     "browser_action": {
-        "default_icon": "will_icon.jpg",
+        "default_icon": "will_icon.png",
         "default_popup": "popup.html"
     },
     "web_accessible_resources": [
