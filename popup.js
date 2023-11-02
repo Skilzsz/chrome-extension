@@ -9,7 +9,7 @@
 
     // use chrome api to load state of popup buttons from last time they were changed
     chrome.storage.local.get(["switchState"], (result) => {
-        console.log(switchState);
+        console.log(result.switchState);
         if (result.switchState === 'on') {
             onButton.checked = true;
             happyWill.style.display = "block"
@@ -26,7 +26,8 @@
         if (onButton.checked) {
             happyWill.style.display = "block"
             angryWill.style.display = "none"
-            chrome.storage.local.set({switchState: "on"}).then((result) => {console.log(result.switchState)})
+            chrome.storage.local.set({switchState: "on"}) //.then(() => {console.log(value)})
+            setTimeout(location.reload(), 0); // try ot get page to reload but not working
         }  
         
     })
@@ -36,6 +37,7 @@
             happyWill.style.display = "none"
             angryWill.style.display = "block"
             chrome.storage.local.set({switchState: "off"})
+            setTimeout(location.reload(), 0);
         }
         
     })
