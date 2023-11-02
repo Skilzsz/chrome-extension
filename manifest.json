@@ -6,10 +6,19 @@
     "content_scripts": [
         {
             "matches": ["https://*/*"],
-            "js": ["./main.js"]
+            "js": ["./main-v2.js"]
         }
     ],
     "browser_action": {
         "default_icon": "will_icon.jpg"
-    }
+    },
+    "web_accessible_resources": [
+        "click.wav",
+        "space.wav",
+        "enter.wav",
+        "shift.wav",
+        "chocolate-rain.wav",
+        "some-stay-dry.wav",
+        "rickroll.wav"
+    ]
 }
