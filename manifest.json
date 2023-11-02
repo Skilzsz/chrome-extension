@@ -13,12 +13,12 @@
         "default_icon": "will_icon.jpg"
     },
     "web_accessible_resources": [
-        "click.wav",
-        "space.wav",
-        "enter.wav",
-        "shift.wav",
-        "chocolate-rain.wav",
-        "some-stay-dry.wav",
-        "rickroll.wav"
+        "audio/click.wav",
+        "audio/space.wav",
+        "audio/enter.wav",
+        "audio/shift.wav",
+        "audio/chocolate-rain.wav",
+        "audio/some-stay-dry.wav",
+        "audio/rickroll.wav"
     ]
 }

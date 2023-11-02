@@ -1,50 +1,46 @@
-
-// const audioClick = 'https://www.myinstants.com/en/instant/adventure-time-finn-screaming-/?utm_source=copy&utm_medium=share';
-// audioClick.play();
 document.addEventListener('click', () => {
-    let audio = new Audio (chrome.runtime.getURL("click.wav"))
+    let audio = new Audio (chrome.runtime.getURL("audio/click.wav"))
     audio.play()
 })
-// https://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg
-// const audioSpace = new Audio(`Audio file`);
+
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
-        let audio = new Audio (chrome.runtime.getURL("space.wav"))
+        let audio = new Audio (chrome.runtime.getURL("audio/space.wav"))
         audio.play()
     }
 })
 
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Enter') { 
-        let audio = new Audio (chrome.runtime.getURL("enter.wav"))
+        let audio = new Audio (chrome.runtime.getURL("audio/enter.wav"))
         audio.play()
     }
 })
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'c' && e.metaKey) { 
-        let audio = new Audio (chrome.runtime.getURL("chocolate-rain.wav"))
+        let audio = new Audio (chrome.runtime.getURL("audio/chocolate-rain.wav"))
         audio.play()
     }
 })
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'v' && e.metaKey) { 
-        let audio = new Audio (chrome.runtime.getURL("some-stay-dry.wav"))
+        let audio = new Audio (chrome.runtime.getURL("audio/some-stay-dry.wav"))
         audio.play()
     }
 })
 
 document.addEventListener('keydown', (e) => {
     if (e.code === 'ArrowUp' && e.metaKey) { 
-        let audio = new Audio (chrome.runtime.getURL("rickroll.wav"))
+        let audio = new Audio (chrome.runtime.getURL("audio/rickroll.wav"))
         audio.play()
     }
 })
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Shift') { 
-        let audio = new Audio (chrome.runtime.getURL("shift.wav"))
+        let audio = new Audio (chrome.runtime.getURL("audio/shift.wav"))
         audio.play()
     }
 })
@@ -59,7 +55,7 @@ document.addEventListener('keydown', (e) => {
     }
 })
 
-let arcade = new Audio (chrome.runtime.getURL("click.wav"))
+let arcade = new Audio (chrome.runtime.getURL("audio/click.wav"))
 document.addEventListener('DOMContentLoaded', arcade.play())
 
 
